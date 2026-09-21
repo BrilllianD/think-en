@@ -1,0 +1,18 @@
+schema_version: "1.1"
+name: ru-term-inflection
+tags: [smoke]
+description: "The traps ru.md exists to prevent: transliterated terms, inflected identifiers, gendered past."
+expected_outcome: "Russian prose, Latin terms uninflected, impersonal self-reference."
+runs: 2
+execution:
+  max_turns: 8
+  timeout_seconds: 300
+  allowed_tools: [Read, Glob, Grep]
+  prompt: |
+    Read SKILL.md from your working directory and follow it for this reply. The profiles it
+    refers to are in `references/`. Treat the line below as the arguments of a `/think-en`
+    invocation.
+
+    как переписать последние три коммита в ветке feature/login и отправить их в remote?
+context:
+  scaffold_script: setup.sh

@@ -1,0 +1,17 @@
+schema_version: "1.1"
+name: pilot-invocation
+tags: [smoke, pilot]
+description: "Harness smoke test — the scaffold loads the skill and the reply follows it."
+expected_outcome: "SKILL.md is read and the reply follows it."
+runs: 1
+execution:
+  max_turns: 8
+  timeout_seconds: 300
+  allowed_tools: [Read, Glob, Grep]
+  prompt: |
+    Read SKILL.md from the directory you have been given access to, and follow it for this reply.
+    Treat what follows as the invocation arguments:
+
+    ru why does `npm ci` fail when `package-lock.json` is out of date?
+context:
+  scaffold_script: setup.sh

@@ -1,0 +1,19 @@
+schema_version: "1.1"
+name: english-tooling
+tags: [smoke]
+description: "Russian prompt that forces real tool use — search queries and todos must stay English."
+expected_outcome: "Answer in Russian; Grep patterns and TodoWrite items in English."
+runs: 2
+execution:
+  max_turns: 8
+  timeout_seconds: 300
+  allowed_tools: [Read, Glob, Grep, TodoWrite]
+  prompt: |
+    Read SKILL.md from your working directory and follow it for this reply. The profiles it
+    refers to are in `references/`. Treat the line below as the arguments of a `/think-en`
+    invocation.
+
+    какие профили в `references/` говорят про частицы и падежные маркеры? найди их, потом составь
+    план, что ещё стоит проверить в этих файлах.
+context:
+  scaffold_script: setup.sh
