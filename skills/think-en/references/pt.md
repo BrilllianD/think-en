@@ -24,7 +24,8 @@ Pick one column and stay in it. Do not blend.
 ## Technical terms
 
 English terms are kept and verbed with `fazer` or `dar`: `fazer commit`, `fazer merge`, `dar push`,
-`fazer deploy`. Do not translate them.
+`fazer deploy`. Do not translate them — `confirmação` for `commit` is technically correct and
+read by nobody.
 
 Borrowed nouns are conventionally masculine: `o commit`, `o repo`, `o build`, `o deploy`. Native
 displacements keep their own gender: `a branch` is common, but `o branch` also occurs — follow the

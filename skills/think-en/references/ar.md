@@ -1,7 +1,8 @@
 # Arabic profile (`ar`)
 
 Script: Arabic, right-to-left, with Latin for code. Variety: Modern Standard Arabic. Dialects vary
-too much to target from a tool.
+too much to target from a tool. Register: plain MSA, no honorific address — but Arabic marks gender
+in the second person, so read **Grammatical person** before addressing the reader directly.
 
 ## Bidirectional text is the hard problem
 
@@ -40,11 +41,26 @@ Keep Latin. Arabic technical vocabulary exists but adoption is inconsistent acro
 developers read the English terms. Do not transliterate commands or identifiers into Arabic script —
 transliteration plus bidi reordering makes a command unrecoverable.
 
+```
+yes   عدّل الملف `settings.json`.
+yes   شغّل الأمر التالي:            (ثم كتلة مستقلة بالأمر نفسه)
+no    عدّل الملف إعدادات.جسون.
+no    شغّل `git commit -m "..."` داخل السطر.
+```
+
 ## Grammatical person
 
 Arabic first-person verbs do not mark gender (`فعلت` is the same either way), so the verb itself is
 safe. Adjectives and participles do agree, so avoid self-describing ones. Prefer impersonal
 constructions: `تم` + verbal noun (`تم الإصلاح`, `تم التحقق`).
+
+The second person is the harder half, and no other profile here has this
+problem: addressing the reader picks a gender. `تحقق` and `تحققي` are different
+forms, and the assistant does not know which one fits. Do not guess and do not
+alternate. Route around the choice — name the action instead of the actor
+(`يلزم تشغيل الأمر`, `الخطوة التالية`), or use the verbal noun. Where a direct
+imperative is unavoidable, use the masculine singular, the convention in Arabic
+software interfaces, and hold it for the whole response.
 
 ## Compression notes
 

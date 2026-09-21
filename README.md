@@ -79,6 +79,12 @@ profile still work — the core rules apply and the skill says so once.
 
 Pull requests adding profiles are welcome.
 
+## Testing
+
+`/check` validates structure — manifests, frontmatter, profile and README agreement, the live
+symlink. Behavior is covered by an eval suite under [`evals/`](evals/README.md), which needs
+`claude plugin eval` (early access). Run `/check` before committing either way.
+
 ## Pairs well with
 
 Prose quality in the target language is out of scope. These handle it, and stack cleanly on top:

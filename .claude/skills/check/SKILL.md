@@ -92,13 +92,27 @@ Run from the repo root.
    `description` line in `SKILL.md` frontmatter must stay on one line, and lines inside fenced
    code blocks are exempt when the code cannot be broken. Say so instead of reporting them.
 
-9. **Placeholder count** — informational, not a failure
+9. **Eval cases are complete**
 
    ```sh
-   grep -rln 'TODO-your-' --exclude-dir=.git .
+   for d in evals/*/; do
+     case "$d" in evals/results/) continue;; esac
+     { test -f "$d/prompt.md" || test -f "$d/case.yaml"; } ||
+       echo "$d: no prompt.md or case.yaml"
+     ls "$d"graders/*.md >/dev/null 2>&1 || echo "$d: no graders"
+   done
    ```
 
-   Report the file count as a publishing reminder.
+   A case with no grader silently scores nothing. Any output line is a failure. If `evals/` does not
+   exist, skip this check and say so — the suite is optional.
+
+10. **Placeholder count** — informational, not a failure
+
+    ```sh
+    grep -rln 'TODO-your-' --exclude-dir=.git .
+    ```
+
+    Report the file count as a publishing reminder.
 
 ## Reporting
 

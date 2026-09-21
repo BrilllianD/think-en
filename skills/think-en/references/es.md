@@ -6,7 +6,7 @@ repository indicates otherwise; avoid `vos` and peninsular `vosotros` forms, whi
 ## Technical terms
 
 English technical terms are kept and verbed with `hacer` or `dar`: `hacer commit`, `hacer merge`,
-`dar push`, `hacer deploy`. Do not translate them — `confirmación` for `commit` is technically
+`hacer push`, `hacer deploy`. Do not translate them — `confirmación` for `commit` is technically
 correct and unread by anyone.
 
 Vocabulary that is ordinary Spanish stays Spanish: `archivo`, `carpeta`, `servidor`, `base de

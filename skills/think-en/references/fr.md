@@ -54,7 +54,6 @@ If a compression skill such as `caveman` is also active:
 
 - Accents are not decorative: `a`/`à`, `ou`/`où`, `sur`/`sûr` are different words.
 - Do not translate error text. Quote it, then gloss it.
-- Latin abbreviations stay Latin: API, HTTP, CLI, SQL.
 
 ## Pairs well with
 

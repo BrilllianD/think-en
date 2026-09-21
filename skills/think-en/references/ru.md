@@ -41,7 +41,7 @@ If a compression skill such as `caveman` is also active:
 
 - `вы`/`ты` — stay on `ты` for the whole response; do not drift mid-answer.
 - Do not translate error text. Quote it, then gloss it.
-- Keep Latin abbreviations intact: API, HTTP, CLI, SQL.
+- Latin abbreviations stay Latin: API, HTTP, CLI, SQL.
 
 ## Pairs well with
 
