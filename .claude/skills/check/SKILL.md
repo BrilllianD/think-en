@@ -5,7 +5,8 @@ description: Validate the think-en plugin — manifests, skill frontmatter, prof
 
 # check
 
-Structural validation for the `think-en` plugin. This repo has no test suite; this is the substitute.
+Structural validation for the `think-en` plugin. This repo has no test suite; this is the
+substitute.
 
 Run every check, then report **one line per check, failures first**. Do not fix anything — report
 and stop. The maintainer decides what to change.
@@ -17,7 +18,8 @@ Run from the repo root.
 1. **Manifests parse**
 
    ```sh
-   jq -e . .claude-plugin/plugin.json >/dev/null && jq -e . .claude-plugin/marketplace.json >/dev/null
+   jq -e . .claude-plugin/plugin.json >/dev/null &&
+     jq -e . .claude-plugin/marketplace.json >/dev/null
    ```
 
 2. **Names agree across manifests**
@@ -65,7 +67,32 @@ Run from the repo root.
 
    Its presence would register `/think-en` twice. See CLAUDE.md.
 
-7. **Placeholder count** — informational, not a failure
+7. **Profiles carry every template section**
+
+   ```sh
+   for f in skills/think-en/references/[a-z][a-z].md; do
+     for h in 'Technical terms' 'Grammatical person' 'Compression notes' 'Pitfalls' \
+              'Pairs well with'; do
+       grep -q "^## $h" "$f" || echo "$f missing: $h"
+     done
+   done
+   ```
+
+   The glob matches two-letter codes only, so `_template.md` and `default.md` are skipped. Any
+   output line is a failure.
+
+8. **Line width**
+
+   ```sh
+   awk 'length > 100 {print FILENAME ":" FNR ": " length}' \
+     skills/think-en/SKILL.md skills/think-en/references/*.md README.md CLAUDE.md
+   ```
+
+   Prose in this repo wraps at 100 columns. Report each overlong line. Two exemptions: the
+   `description` line in `SKILL.md` frontmatter must stay on one line, and lines inside fenced
+   code blocks are exempt when the code cannot be broken. Say so instead of reporting them.
+
+9. **Placeholder count** — informational, not a failure
 
    ```sh
    grep -rln 'TODO-your-' --exclude-dir=.git .
