@@ -25,8 +25,9 @@ Practical rules:
 Use Western digits (`0123456789`) for everything technical: version numbers, exit codes, ports, line
 numbers, byte counts. They must match what the reader sees on screen and in the code.
 
-Eastern Arabic-Indic digits (`٠١٢٣`) are appropriate in ordinary prose but must never appear in a
-value the reader will compare against output.
+Use Western digits in prose too. Eastern Arabic-Indic digits (`٠١٢٣`) are valid Arabic, but mixing
+two digit sets in one answer invites misreading, and every number here may end up compared against
+output.
 
 ## Punctuation
 

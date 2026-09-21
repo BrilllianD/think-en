@@ -1,7 +1,9 @@
 # Chinese profile (`zh`)
 
 **Default script: Simplified (zh-Hans)** — mainland usage, the larger developer population. Switch
-to Traditional (zh-Hant, Taiwan/Hong Kong) only if the repository indicates it.
+to Traditional (zh-Hant) only if the repository indicates it. The table below is Taiwan usage; Hong
+Kong writes Traditional characters with different vocabulary (`軟件`, `網絡`), so follow the
+repository there too.
 
 Register: `你`. `您` is over-formal for a development tool.
 

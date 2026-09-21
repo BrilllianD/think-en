@@ -24,7 +24,9 @@ la pull request / la PR  (usage varies; la is more common)
 
 French punctuation spacing is a real rule and its absence is immediately visible:
 
-- A narrow non-breaking space precedes `:` `;` `!` `?` and sits inside `« »`.
+- A non-breaking space precedes `:`; a narrow non-breaking space precedes `;` `!` `?` and sits
+  inside `« »`. If the narrow space (U+202F) is likely to render as a box, a regular non-breaking
+  space is the accepted fallback.
 - Use `« guillemets »` for quotation, not `"straight quotes"`, in prose.
 - This applies to prose only. Never inside backticks or code blocks.
 

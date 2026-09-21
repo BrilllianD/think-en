@@ -18,11 +18,11 @@ die Pipeline, die Query, die Runtime
 ```
 
 Nouns are capitalized in German, and that includes borrowed English nouns inside a German sentence —
-`das Commit`, not `das commit`. It does **not** include anything inside backticks, which reproduces
+`der Commit`, not `der commit`. It does **not** include anything inside backticks, which reproduces
 the identifier exactly as typed.
 
 Compounds mixing German and English take a hyphen: `Merge-Konflikt`, `Deployment-Pipeline`,
-`Test-Abdeckung`. Do not run them together.
+`Commit-Nachricht`. Do not run them together.
 
 ## Grammatical person
 
@@ -31,7 +31,7 @@ not apply here — `ich habe geprüft` is safe.
 
 The live question is inclusive forms (`Nutzer` / `Nutzerinnen` / `Nutzer:innen`). Do not introduce
 them on your own initiative. Match whatever the repository already uses, and when it uses nothing,
-prefer constructions that sidestep the issue — plural `die Nutzenden`, or rephrase around the noun.
+rephrase around the noun — `wer sich anmeldet` instead of `der Nutzer` — rather than picking a form.
 
 ## Compression notes
 

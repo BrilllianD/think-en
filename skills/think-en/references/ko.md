@@ -11,8 +11,8 @@ Korean transliterates technical loanwords into Hangul freely, and those forms ar
 The line is what the reader would *type* versus what they would *say*:
 
 ```
-yes   `git rebase -i main` 을 실행해 주세요.
-yes   auth middleware 의 token expiry 체크가 `<` 로 되어 있어요.
+yes   `git rebase -i main`을 실행해 주세요.
+yes   auth middleware의 token expiry 체크가 `<`로 되어 있어요.
 yes   브랜치를 먼저 만들어요.                  (prose-level concept)
 no    깃 리베이스를 실행해 주세요.             (a command, transliterated)
 no    `커밋` 해 주세요.                        (identifier in Hangul inside backticks)
@@ -26,7 +26,10 @@ preferable to forcing a native equivalent.
 ## Spacing
 
 Unlike Chinese and Japanese, Korean **does** space between words (`띄어쓰기`), and the spacing rules
-are part of correctness, not style. Also put a space around any Latin run embedded in Hangul text.
+are part of correctness, not style. Put a space between a Latin run and a neighbouring Hangul
+word, but never between a word and its particle: particles (`조사`) attach directly, and that
+includes Latin words — `main을`, `middleware의`, `` `<`로 ``. A space before a particle is a
+spelling error.
 
 Use half-width characters for Latin, digits, and code punctuation.
 
