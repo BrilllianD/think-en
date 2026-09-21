@@ -3,11 +3,11 @@
   "version": "0.3.1",
   "description": "Reply to the user in their language while reasoning, tooling, and persisted artifacts stay English. Cuts token cost and keeps reasoning in the model's strongest language, without asking the user to switch.",
   "author": {
-    "name": "TODO-your-name",
-    "url": "https://github.com/TODO-your-handle"
+    "name": "BrilllianD",
+    "url": "https://github.com/BrilllianD"
   },
-  "homepage": "https://github.com/TODO-your-handle/think-en",
-  "repository": "https://github.com/TODO-your-handle/think-en",
+  "homepage": "https://github.com/BrilllianD/think-en",
+  "repository": "https://github.com/BrilllianD/think-en",
   "license": "MIT",
   "keywords": [
     "language",

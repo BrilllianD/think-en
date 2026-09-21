@@ -27,14 +27,14 @@ what you actually read. `think-en` keeps that in your language and moves the res
 ## Install
 
 ```
-/plugin marketplace add <your-handle>/think-en
+/plugin marketplace add BrilllianD/think-en
 /plugin install think-en@think-en
 ```
 
 Or, for a local checkout, symlink the skill:
 
 ```
-git clone https://github.com/<your-handle>/think-en ~/Projects/think-en
+git clone https://github.com/BrilllianD/think-en ~/Projects/think-en
 ln -s ~/Projects/think-en/skills/think-en ~/.claude/skills/think-en
 ```
 

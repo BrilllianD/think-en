@@ -106,20 +106,11 @@ Run from the repo root.
    A case with no grader silently scores nothing. Any output line is a failure. If `evals/` does not
    exist, skip this check and say so — the suite is optional.
 
-10. **Placeholder count** — informational, not a failure
-
-    ```sh
-    grep -rln 'TODO-your-' --exclude-dir=.git .
-    ```
-
-    Report the file count as a publishing reminder.
-
 ## Reporting
 
 ```
 FAIL  <check>  <what was found>
 ok    <check>
-note  placeholders: N files still contain TODO-your-
 ```
 
 If everything passes, say so in one line and stop.
