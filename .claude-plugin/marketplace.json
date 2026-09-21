@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "think-en",
+  "description": "Answer the user in their language, do everything else in English. A routing rule, not a translator and not a language tutor.",
+  "owner": {
+    "name": "TODO-your-name",
+    "url": "https://github.com/TODO-your-handle"
+  },
+  "plugins": [
+    {
+      "name": "think-en",
+      "description": "Reply in the user's language while reasoning, tooling, and persisted artifacts stay English.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "think-en",
+  "version": "0.1.0",
+  "description": "Reply to the user in their language while reasoning, tooling, and persisted artifacts stay English. Cuts token cost and keeps reasoning in the model's strongest language, without asking the user to switch.",
+  "author": {
+    "name": "TODO-your-name",
+    "url": "https://github.com/TODO-your-handle"
+  },
+  "homepage": "https://github.com/TODO-your-handle/think-en",
+  "repository": "https://github.com/TODO-your-handle/think-en",
+  "license": "MIT",
+  "keywords": [
+    "language",
+    "i18n",
+    "tokens",
+    "russian",
+    "multilingual"
+  ]
+}
