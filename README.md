@@ -74,10 +74,16 @@ does not generalize: script, register, how foreign technical terms attach to the
 compression rules are no-ops, and the traps an assistant with no gender or social standing would
 otherwise walk into.
 
-Shipped profiles: `ru`. Languages without a profile still work — the core rules apply and the skill
-says so once.
+Shipped profiles: `ar`, `de`, `es`, `fr`, `it`, `ja`, `ko`, `pt`, `ru`, `zh`. Languages without a
+profile still work — the core rules apply and the skill says so once.
 
 Pull requests adding profiles are welcome.
+
+## Testing
+
+`/check` validates structure — manifests, frontmatter, profile and README agreement, the live
+symlink. Behavior is covered by an eval suite under [`evals/`](evals/README.md), which needs
+`claude plugin eval` (early access). Run `/check` before committing either way.
 
 ## Pairs well with
 

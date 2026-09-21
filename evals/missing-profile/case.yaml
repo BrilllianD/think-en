@@ -1,0 +1,18 @@
+schema_version: "1.1"
+name: missing-profile
+tags: [smoke]
+description: "A language with no profile file — uk."
+expected_outcome: "Answer in Ukrainian, note the missing profile once, do not fall back to ru."
+runs: 2
+execution:
+  max_turns: 8
+  timeout_seconds: 300
+  allowed_tools: [Read, Glob, Grep]
+  prompt: |
+    Read SKILL.md from your working directory and follow it for this reply. The profiles it
+    refers to are in `references/`. Treat the line below as the arguments of a `/think-en`
+    invocation.
+
+    uk why does the build fail after upgrading a dependency?
+context:
+  scaffold_script: setup.sh

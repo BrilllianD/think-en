@@ -3,7 +3,8 @@
 Copy this file to `<code>.md` and fill it in. Keep it short — the core rules in `SKILL.md` already
 cover everything that generalizes. A profile exists only for what does not.
 
-Script: <writing system>. Register: <formal / informal form of address, and which one to default to>.
+Script: <writing system>. Register: <formal / informal form of address, and which one to default
+to>.
 
 ## Technical terms
 

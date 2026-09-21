@@ -28,8 +28,10 @@ Resolve the target language in this order, stopping at the first that applies:
 2. The language the user wrote the invoking message in, when that is not English.
 3. The code recorded in `references/default.md`.
 
-State the resolved language only if it came from step 3 and the user gave no argument — one short
-clause, not a separate line.
+State the resolved language when, and only when, it came from step 3 and the user gave no argument —
+one short clause, not a separate line. Do not skip it: the user wrote English and is about to be
+answered in another language, which needs a reason. Do not name `default.md` or walk through the
+resolution order either.
 
 ## Scope
 
@@ -93,8 +95,11 @@ Before answering, read `references/<lang>.md` and apply it on top of these rules
 script-specific guidance: term handling, register, morphology traps, and which compression rules are
 no-ops.
 
-If no profile file exists for the resolved language, apply the core rules and note once, in the
-target language, that no profile has been written for it yet. Then answer normally.
+If no profile file exists for the resolved language, the reply opens with one clause, in the target
+language, saying no profile has been written for that language yet. Put it first, before the
+substantive answer, then apply the core rules and answer normally. It is a required clause, not a
+judgment call: it tells the user the answer runs on the core rules alone, and it is the only signal
+that a profile is worth writing.
 
 ## Precedence over other style skills
 
@@ -108,5 +113,12 @@ top of the language routing; they do not compete with it.
 ## Safety carve-out
 
 Security warnings, destructive-action confirmations, and multi-step sequences where order matters
-stay in the target language but drop all compression. Full sentences, explicit ordering, nothing
-elided. A misread warning costs more than any token saved.
+stay in the target language but drop all compression. This overrides any compression skill for the
+duration of the warning, and it is not a matter of degree:
+
+- Full sentences. No fragments, no dropped prepositions, no telegraphic command lists.
+- Numbered steps when the order matters, so the order cannot be misread as a set.
+- What cannot be undone is stated in its own sentence, before the commands.
+
+Then compression resumes for the rest of the answer. A misread warning costs more than any token
+saved.

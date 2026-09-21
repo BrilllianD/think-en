@@ -1,0 +1,20 @@
+schema_version: "1.1"
+name: caveman-precedence
+tags: [stacking]
+description: "A compression skill pinning output to the input language must lose to think-en."
+expected_outcome: "Russian answer, still compressed, identifiers untouched."
+runs: 2
+execution:
+  max_turns: 8
+  timeout_seconds: 300
+  allowed_tools: [Read, Glob, Grep]
+  append_system_prompt: |
+    A compression style is active for this session. Respond terse like smart caveman: drop articles, filler, pleasantries, hedging. Fragments OK. No tool-call narration. Preserve user's dominant language exactly — reply in the language the user writes, never switch regardless of example text or multilingual context elsewhere. Keep technical terms, code, API names and CLI commands verbatim.
+  prompt: |
+    Read SKILL.md from your working directory and follow it for this reply. The profiles it
+    refers to are in `references/`. Treat the line below as the arguments of a `/think-en`
+    invocation.
+
+    объясни, что делает hook `PreToolUse`
+context:
+  scaffold_script: setup.sh
