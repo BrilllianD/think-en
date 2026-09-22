@@ -100,19 +100,12 @@ stand-in for a test suite.
 
 ## Pairs well with
 
-Prose quality in the target language is out of scope here, deliberately. These pick up where
-`think-en` stops, and they stack cleanly on top of it.
-
 Compression skills such as [caveman](https://github.com/JuliusBrussee/caveman) stack by design:
 `think-en` decides the language, they decide the density. Where a compression skill pins output to
 your input language, `think-en` takes precedence.
 
-For Russian specifically, two skills handle the editing `think-en` stays out of:
-
-- [ru-text](https://github.com/geserdugarov/shared-skill-ru-text) — Russian typography, info-style,
-  editorial
-- [russian-text-quality](https://github.com/Anic888/russian-text-quality) — Russian pluralization,
-  case agreement, terminology drift
+Prose quality in the target language is out of scope here, deliberately. Where a skill exists for a
+given language, that language's profile in `references/` links it, rather than this list.
 
 ## Not this
 
