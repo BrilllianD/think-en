@@ -29,8 +29,20 @@ same command twice. Do not create it.
 
 ## Keep the manifests in sync
 
-`.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` both carry name, description, and
-owner. Change one, change the other. The `version` field lives only in `plugin.json`.
+`.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` both carry name and owner. Change
+one, change the other. The `version` field lives only in `plugin.json`.
+
+Descriptions follow a narrower rule. The `description` in `skills/think-en/SKILL.md` frontmatter is
+canonical, because the skill directory is the portable unit — a harness other than Claude Code reads
+that file and nothing else. Its first sentence is:
+
+> Reply to the user in their language while reasoning, tooling, and persisted artifacts stay
+> English.
+
+Every plugin-level description must open with that sentence verbatim, and may extend it:
+`plugin.json` `.description` and `marketplace.json` `.plugins[0].description`. The top-level
+`marketplace.json` `.description` is catalog copy describing the marketplace rather than the plugin,
+and is deliberately different — it is not covered by this rule.
 
 ## Language profiles
 

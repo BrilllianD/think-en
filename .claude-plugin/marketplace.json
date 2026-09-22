@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "think-en",
-      "description": "Reply in the user's language while reasoning, tooling, and persisted artifacts stay English.",
+      "description": "Reply to the user in their language while reasoning, tooling, and persisted artifacts stay English.",
       "source": "./",
       "category": "productivity"
     }
