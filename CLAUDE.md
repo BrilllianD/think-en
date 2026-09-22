@@ -40,12 +40,6 @@ Profiles are `skills/think-en/references/<iso-639-1>.md`, loaded by path convent
 Adding a profile also requires appending the code to the "Shipped profiles" line in `README.md` and
 a minor version bump in `plugin.json`.
 
-## `TODO-` placeholders are intentional
-
-`TODO-your-name` and `TODO-your-handle` appear in both manifests, `LICENSE`, and the README install
-URLs. They are waiting on the maintainer's public identity. Do not fill them in with a guess, and
-never substitute the user's email address.
-
 ## Scope boundary
 
 `think-en` is a language-routing rule. It is not a translator and not a language tutor. Do not add

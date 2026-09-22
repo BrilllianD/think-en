@@ -3,8 +3,8 @@
   "name": "think-en",
   "description": "Answer the user in their language, do everything else in English. A routing rule, not a translator and not a language tutor.",
   "owner": {
-    "name": "TODO-your-name",
-    "url": "https://github.com/TODO-your-handle"
+    "name": "BrilllianD",
+    "url": "https://github.com/BrilllianD"
   },
   "plugins": [
     {
