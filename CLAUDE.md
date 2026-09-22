@@ -66,5 +66,6 @@ own rules.
 
 ## Git
 
-Work on `feat/<name>` or `fix/<name>` branches. `master` takes merges via PR only. `gh` is
-available, but no remote is configured yet, so `gh pr create` fails until one is added.
+Work on a prefixed branch: `feat/`, `fix/`, `chore/`, or `docs/`, followed by a short name.
+`master` takes merges via PR only. `gh` is authenticated and `origin` points at
+`github.com/BrilllianD/think-en`, so `gh pr create` works.
