@@ -1,6 +1,6 @@
 {
   "name": "think-en",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reply to the user in their language while reasoning, tooling, and persisted artifacts stay English. Cuts token cost and keeps reasoning in the model's strongest language, without asking the user to switch.",
   "author": {
     "name": "BrilllianD",
@@ -13,16 +13,27 @@
     "language",
     "i18n",
     "tokens",
-    "russian",
-    "german",
-    "spanish",
+    "multilingual",
+    "arabic",
+    "chinese",
+    "dutch",
     "french",
+    "german",
+    "greek",
+    "hebrew",
+    "hindi",
+    "indonesian",
     "italian",
-    "portuguese",
     "japanese",
     "korean",
-    "chinese",
-    "arabic",
-    "multilingual"
+    "persian",
+    "polish",
+    "portuguese",
+    "russian",
+    "spanish",
+    "thai",
+    "turkish",
+    "ukrainian",
+    "vietnamese"
   ]
 }
