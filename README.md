@@ -85,9 +85,10 @@ script, the register, how foreign technical terms attach to the grammar, which c
 turn into no-ops, and the traps an assistant with no gender and no social standing would otherwise
 walk straight into.
 
-Shipped profiles: `ar`, `de`, `es`, `fr`, `it`, `ja`, `ko`, `pt`, `ru`, `zh`. Your language does not
-need one in order to work — without a profile the core rules still apply, and the skill says so once
-so you are not left guessing.
+Shipped profiles: `ar`, `de`, `el`, `es`, `fa`, `fr`, `he`, `hi`, `id`, `it`, `ja`, `ko`, `nl`,
+`pl`, `pt`, `ru`, `th`, `tr`, `uk`, `vi`, `zh`. Your language does not need one in order to
+work — without a profile the core rules still apply, and the skill says so once so you are not
+left guessing.
 
 Pull requests adding profiles are very welcome.
 

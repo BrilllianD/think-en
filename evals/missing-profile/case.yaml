@@ -1,8 +1,8 @@
 schema_version: "1.1"
 name: missing-profile
 tags: [smoke]
-description: "A language with no profile file — uk."
-expected_outcome: "Answer in Ukrainian, note the missing profile once, do not fall back to ru."
+description: "A language with no profile file — mk."
+expected_outcome: "Answer in Macedonian, note the missing profile once, do not fall back to ru."
 runs: 2
 execution:
   max_turns: 8
@@ -13,6 +13,6 @@ execution:
     refers to are in `references/`. Treat the line below as the arguments of a `/think-en`
     invocation.
 
-    uk why does the build fail after upgrading a dependency?
+    mk why does the build fail after upgrading a dependency?
 context:
   scaffold_script: setup.sh
