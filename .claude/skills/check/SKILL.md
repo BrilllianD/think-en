@@ -22,14 +22,18 @@ Run from the repo root.
      jq -e . .claude-plugin/marketplace.json >/dev/null
    ```
 
-2. **Names agree across manifests**
+2. **Names and descriptions agree across manifests**
 
    ```sh
-   jq -r '.name' .claude-plugin/plugin.json
-   jq -r '.plugins[0].name' .claude-plugin/marketplace.json
+   jq -r '.name, .description' .claude-plugin/plugin.json
+   jq -r '.plugins[0].name, .plugins[0].description' .claude-plugin/marketplace.json
+   grep -n '^description:' skills/think-en/SKILL.md
    ```
 
-   Both must be `think-en`.
+   Both names must be `think-en`. Both plugin-level descriptions must open with the first sentence
+   of the `SKILL.md` frontmatter `description`, verbatim; they may extend it. The top-level
+   `marketplace.json` `.description` is catalog copy and is intentionally different — do not report
+   it. See CLAUDE.md.
 
 3. **Skill frontmatter intact**
 
