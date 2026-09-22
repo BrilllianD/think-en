@@ -35,12 +35,16 @@ Two lines inside Claude Code:
 /plugin install think-en@think-en
 ```
 
-Prefer a local checkout you can edit? Clone it and symlink the skill:
+Prefer to install it by hand, without the plugin system? Clone it and copy the skill in:
 
 ```
-git clone https://github.com/BrilllianD/think-en ~/Projects/think-en
-ln -s ~/Projects/think-en/skills/think-en ~/.claude/skills/think-en
+git clone https://github.com/BrilllianD/think-en
+mkdir -p ~/.claude/skills/think-en
+cp -r think-en/skills/think-en/. ~/.claude/skills/think-en/
 ```
+
+The copy is independent of the clone, so edit `~/.claude/skills/think-en` directly. Re-run the
+`cp` to pick up upstream changes — it overwrites in place, and discards local edits.
 
 ## Use
 
